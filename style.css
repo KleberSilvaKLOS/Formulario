@@ -1,0 +1,280 @@
+/*Serve para geral*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, input, button, textarea{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #EFEFEF;
+}
+
+.page{
+  width: 750px;
+  margin: auto;
+}
+
+header{
+  width: 319px;
+  margin-top: 74px;
+}
+
+/*Título*/
+header h1{
+  color: #FFF;
+  font-family: 'Staatliches', cursive;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/*info*/
+header p{
+  color: #FFF;
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  width: 417px;
+  margin-top: 18px;
+
+}
+
+/* Colocando caixa atrás da outra */
+
+body::before{
+  content: '';
+  width: 100%;
+  height: 436px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: #535971;
+}
+
+form{
+  margin-top: 38px;
+  background: #FAFAFC;
+  border-radius: 20px 20px 0 0;
+  min-height: 300px;
+
+  padding: 64px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/*Funçao aplicada para todos*/
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+fieldset {
+  border: none;
+}
+
+/*Função aplicada para todos sub-títulos*/
+fieldset legend{
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 34px;
+  border-bottom: 1px solid #E6E6F0;
+  padding-bottom: 16px ;
+}
+
+/*Data*/
+.col-3 {
+  display: flex;
+  gap: 20px;
+}
+
+/*Data*/
+.col-3 > div:nth-child(1) {
+  width: 100%;
+}
+
+.input-wrapper, .input-wrapper-name {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-wrapper-name label {
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px; 
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label {
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px; 
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper-name label span {
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Poppins', sans-serif;
+  
+  color: #C1BCCC;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+  font-size: 12px;
+  line-height: 20px;
+  font-family: 'Poppins', sans-serif;
+  
+  color: #C1BCCC;
+}
+
+.input-wrapper label span:hover{
+  color: #726e7a;
+}
+
+.input-wrapper-name input,
+.input-wrapper-name select {
+  border-radius: 8px;
+
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+
+  height: 56px;
+  padding: 0 20px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  
+}
+
+.input-wrapper input,
+.input-wrapper textarea,
+.input-wrapper select {
+  border-radius: 8px;
+
+  border-radius: 8px;
+  border: 1px solid var(--back-lines-in-white, #E6E6F0);
+  background: var(--shapes-02, #FAFAFC);
+
+  height: 56px;
+  padding: 0 20px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  
+}
+
+.input-wrapper textarea {
+  padding: 0;
+  height: 56px;
+}
+
+fieldset h3 {
+  color: #535971;
+  font-family: 'Staatliches', cursive;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; 
+  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.one {
+  margin-top: 32px;
+}
+
+footer{
+  border-radius: 0px 0px 20px 20px;
+  background: #535971;
+
+  margin: auto;
+
+  width: 750px;
+  height: 160px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+/*Botão*/
+footer .button {
+  height: 56px;
+  background: #FF5374;
+  border: 0;
+  border-radius: 20px;
+
+  font-family: 'Staatliches', cursive;
+
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+
+  color: #FFFFFF;
+
+  width: 608px;
+  height: 55.652px;
+}
+
+footer .button:hover {
+  background-color: #e74868;
+}
+
+footer .button:invalid {
+  background-color: #ff1010;
+}
+
+#name-surname {
+  display: inline;
+}
+
+.nomes {
+  color: #4E4958;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  line-height: 24px; 
+
+  margin-bottom: 8px;
+
+  display: flex;
+  gap: 282px;
+}
+
+#event-surname {
+ margin-left: 22px;
+}
+
+#event-surname, #event-name {
+  width: 297px;
+
+}
+
+input:invalid {
+  border: 0.1px solid #ff1010;
+}
